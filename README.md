@@ -3,7 +3,7 @@
 Introducing "zeroada," a minimalist [Zola](https://www.getzola.org) theme that prioritizes clean CSS and avoids heavy JavaScript. Enjoy a seamless user experience with lightning-fast load times. Let your content take center stage in a clutter-free, elegant design that enhances readability. Responsive and efficient, zeroada brings focus to your ideas.
 
 You can browse the demo website [here](https://zeroada.pages.dev/)
-I also use it on my own [website.](https://speyllsite.pages.dev/)
+I also use it on my own [website.](https://artur.wtf/)
 
 zeroada is a versatile Zola theme that comes with both light and dark variants. You can easily switch between the light and dark themes to suit your preferences.
 
@@ -59,6 +59,7 @@ title = "zeroada"
 languageName = "Français"
 languageCode = "fr"
 ```
+
 #### Multilanguage-Ready Navigation Bar
 
 Customize the header navigation links with the following code in the `extra` section of `config.toml`:
@@ -69,7 +70,7 @@ Customize the header navigation links with the following code in the `extra` sec
 header_nav = [
   { url = "/", name_en = "/home/", name_fr = "/accueil/" },
   { url = "/about", name_en = "/about/", name_fr = "/concernant/" },
-  { url = "/journal", name_en = "/journal/", name_fr = "/journal/" },
+  { url = "/til", name_en = "/til/", name_fr = "/til/" },
   { url = "/blog", name_en = "/blog/", name_fr = "/blog/" }
 ]
 ```
