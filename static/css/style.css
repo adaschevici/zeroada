@@ -498,5 +498,6 @@ textarea {
   .body-with-sidebar {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr;
+    gap: 3rem;
   }
 }
