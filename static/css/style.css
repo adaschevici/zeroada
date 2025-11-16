@@ -175,6 +175,10 @@ body {
 .body-with-sidebar {
   display: grid;
   grid-template-columns: 1fr 10fr;
+  width: 100%;
+  grid-column: 1 / -1;  /* Span all three columns of body grid */
+  max-width: 100rem;    /* Or whatever max width you want */
+  margin: 0 auto;
 }
 .accent-data {
   color: var(--accent);
@@ -370,8 +374,6 @@ body {
   }
 }
 [data-termynal] {
-  width: 90%;
-  max-width: 100%;
   background: var(--color-bg);
   color: var(--color-text);
   font-size: 18px;
