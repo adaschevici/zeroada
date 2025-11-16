@@ -10,6 +10,7 @@
 
 <body id="error-page">
 
+    <a href="{{ get_url(path='/', trailing_slash=false) | safe }}" class="home-link">Go Back Home</a>
     <div class="error">
 
         <div class="wrap">
@@ -27,9 +28,8 @@
                     ERROR 404!
                     FILE NOT FOUND!
                     <span class="comment">
-                      <a href="/">&lt;!--The file you are looking for,
+                      &lt;!--The file you are looking for,
                         is not where you think it is.--&gt;
-                      </a>
                     </span>
                     <span class="orange"></span>
 
