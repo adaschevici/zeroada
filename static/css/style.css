@@ -506,7 +506,9 @@ textarea {
     gap: 3rem;
   }
 }
-
+.theme-transition {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 [data-termynal] {
   width: 90%;
   max-width: 100%;
