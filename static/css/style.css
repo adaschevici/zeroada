@@ -177,7 +177,8 @@ body {
   grid-template-columns: 1fr 10fr;
   width: 100%;
   grid-column: 1 / -1;  /* Span all three columns of body grid */
-  max-width: 100rem;    /* Or whatever max width you want */
+  max-width: min(100rem, 100vw);  /* Never exceed viewport width */
+  width: 90%;
   margin: 0 auto;
 }
 .accent-data {
