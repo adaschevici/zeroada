@@ -45,9 +45,16 @@
             </div>
         </nav>
 
-        <main>
-            {% block content %}{% endblock %}
-        </main>
+        <div class="body-with-sidebar">
+            <aside>
+                {% include "sidebar.html" %}
+            </aside>
+            <main>
+                {% block content %}
+                {% endblock content %}
+            </main>
+            
+        </div>
 
         <footer>
             {% include "footer.html" %}
