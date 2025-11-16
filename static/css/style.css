@@ -19,6 +19,63 @@
   align-items: center;
 }
 
+.logo {
+  width: 20.5rem;
+  height: 20.5rem;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--fgColor);
+  fill: var(--fgColor);
+  background-color: transparent;
+  padding-top: 10rem;
+}
+
+.img-logo {
+  border-radius: 100px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin: 1rem 0 1rem 0;
+  padding: 0 0 0 0;
+}
+
+.social-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  color: var(--fgColor);
+  fill: var(--fgColor);
+  background-color: transparent;
+}
+
+.social-icon:hover {
+  background-color: transparent;
+  color: var(--socBgColor);
+}
+
+.social-icon > a:hover {
+  background-color: transparent;
+  color: transparent;
+}
+
+.social-icon svg:hover {
+  fill: var(--socFgColor);
+}
+
+#linkedin {
+  margin-top: -2px;
+}
+
+.body-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
 .accent-data {
   color: var(--accent);
 }
