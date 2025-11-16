@@ -180,7 +180,95 @@
 .webring {
   margin: .375rem;
 }
+.terminal {
+  font-family: "Courier New", monospace;
+  background-color: var(--terminalBgColor);
+  color: var(--terminalFontColor);
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
+  margin: 20px auto;
+}
 
+.terminal-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25px;
+  background-color: var(--terminalHeaderColor);
+}
+
+.terminal-buttons {
+  display: flex;
+}
+
+.terminal-button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.terminal-button-red {
+  background-color: #e74c3c;
+}
+
+.terminal-button-yellow {
+  background-color: #f1c40f;
+}
+
+.terminal-button-green {
+  background-color: #2ecc71;
+}
+
+.terminal-body {
+  padding-top: 10px;
+  background-color: var(--terminalBodyColor);
+}
+
+.terminal-line {
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  font-weight: bold;
+}
+
+.terminal-command {
+  color: var(--terminalFontColor);
+  visibility: hidden;
+}
+
+.terminal-output {
+  color: var(--terminalFontColor);
+  display: block; /* Each output on new line */
+}
+
+@keyframes matrix-effect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -1000px;
+  }
+}
+
+/* Add Padding */
+@media (max-width: 650px) {
+  .wrapper {
+    margin: 1rem;
+  }
+
+  .logo {
+    padding-left: 28%;
+  }
+
+  .body-with-sidebar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+    gap: 3rem;
+  }
+}
 [data-termynal] {
   width: 90%;
   max-width: 100%;
