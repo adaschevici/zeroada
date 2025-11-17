@@ -8,7 +8,7 @@ td,
 th {
   padding:.5rem
 }
-aside,
+aside:not(.body-with-sidebar > aside),
 details,
 pre,
 progress,
@@ -248,20 +248,20 @@ input[type=checkbox]+label,
 input[type=radio]+label {
   display:inline-block
 }
-aside,
+aside:not(.body-with-sidebar > aside),
 details,
 pre,
 progress {
   border-radius:var(--standard-border-radius)
 }
-aside {
+aside:not(.body-with-sidebar > aside) {
   font-size:1rem;
   width:35%;
   padding:0 10px;
   margin-inline-start:10px;
   float:right
 }
-[dir=rtl] aside {
+[dir=rtl] aside:not(.body-with-sidebar > aside) {
   float:left
 }
 summary {
@@ -533,7 +533,7 @@ dialog::backdrop {
   h6 {
     font-size:.25rem
   }
-  aside {
+  aside:not(.body-with-sidebar > aside) {
     width:100%;
     float:none;
     margin-inline-start:0
