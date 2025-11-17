@@ -112,9 +112,14 @@
     align-items: center;
 }
 
+.site-footer {
+  grid-column: 1 / -1;  /* Span full width */
+  background-color: var(--bg-light);  /* Optional: subtle background */
+  border-top: 1px dashed var(--accent);  /* Optional: separator */
+  margin-top: 2rem;
+}
 /* Footer container */
 .footContainer {
-  grid-column: 1 / -1;  /* Span all three grid columns */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
