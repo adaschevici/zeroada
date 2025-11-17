@@ -126,6 +126,18 @@ body:before {
     animation: noise-2 0.2s linear infinite;
 }
 
+a {
+  text-decoration: none;
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0.3rem;
+  color: var(--linkColor);
+}
+
+a:focus,
+a:hover {
+  background-color: var(--linkColor);
+  color: var(--bgColor);
+}
 .info {
     text-align: center;
     width: 200px;
