@@ -175,6 +175,14 @@
   background-color: transparent;
 }
 
+.social-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+
 .social-icon:hover {
   background-color: transparent;
   color: var(--socBgColor);
