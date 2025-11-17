@@ -115,6 +115,7 @@
 .site-footer {
   grid-column: 1 / -1;  /* Span full width */
   margin-top: 2rem;
+  padding: 2rem clamp(1rem, 5vw, 6rem);  /* Match body-with-sidebar padding */
 }
 /* Footer container */
 .footContainer {
