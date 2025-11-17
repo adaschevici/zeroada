@@ -186,7 +186,6 @@
   width: 100% !important;  /* Override inline attributes */
   height: 100% !important; /* Override inline attributes */
   display: block;
-  fill: var(--fgColor);
   transition: fill 0.3s ease;
 }
 .social-icon:hover {
