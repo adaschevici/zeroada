@@ -10,9 +10,12 @@
         <title>{{ config.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
 
         <link rel="preload" href="{{ get_url(path='css/style.css') }}" as="style">
-        <link rel="stylesheet" href="https://rawcdn.githack.com/adaschevici/cdnable/refs/heads/main/resetcss-min.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://rawcdn.githack.com/adaschevici/cdnable/refs/heads/main/suCSS-min.css" crossorigin="anonymous">
+        <link rel="preload" href="{{ get_url(path='css/reset.css') }}" as="style">
+        <link rel="preload" href="{{ get_url(path='css/sucss.css') }}" as="style">
+
         <link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
+        <link rel="stylesheet" href="{{ get_url(path='css/reset.css') }}">
+        <link rel="stylesheet" href="{{ get_url(path='css/sucss.css') }}">
         <link rel="stylesheet" href="{{ get_url(path='css/custom.css') }}">
 
         <!-- Add favicon with appropriate sizes -->
